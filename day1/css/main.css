@@ -1,0 +1,819 @@
+/* 自定义样式 */
+
+/**
+ * 1.样式都通过ID去限定
+ * 2.尽可能使用直接子代，即   >
+ */
+.btn-wgq { 
+  color: #EB5E5E; 
+  background-color: #7A53AD; 
+  border-color: #D18CB1; 
+} 
+ 
+.btn-wgq:hover, 
+.btn-wgq:focus, 
+.btn-wgq:active, 
+.btn-wgq.active, 
+.open .dropdown-toggle.btn-wgq { 
+  color: #EB5E5E; 
+  background-color: #7A4FB3; 
+  border-color: #D18CB1; 
+} 
+ 
+.btn-wgq:active, 
+.btn-wgq.active, 
+.open .dropdown-toggle.btn-wgq { 
+  background-image: none; 
+} 
+ 
+.btn-wgq.disabled, 
+.btn-wgq[disabled], 
+fieldset[disabled] .btn-wgq, 
+.btn-wgq.disabled:hover, 
+.btn-wgq[disabled]:hover, 
+fieldset[disabled] .btn-wgq:hover, 
+.btn-wgq.disabled:focus, 
+.btn-wgq[disabled]:focus, 
+fieldset[disabled] .btn-wgq:focus, 
+.btn-wgq.disabled:active, 
+.btn-wgq[disabled]:active, 
+fieldset[disabled] .btn-wgq:active, 
+.btn-wgq.disabled.active, 
+.btn-wgq[disabled].active, 
+fieldset[disabled] .btn-wgq.active { 
+  background-color: #7A53AD; 
+  border-color: #D18CB1; 
+} 
+ 
+.btn-wgq .badge { 
+  color: #7A53AD; 
+  background-color: #EB5E5E; 
+}
+
+
+/* 改的navbar-default */
+
+
+.navbar-wgq {
+  background-color: #fff;
+  border-color: #f5f5f5;
+  margin-bottom: 0;
+}
+.navbar-wgq .navbar-brand {
+  color: #777;
+  height: 80px;
+}
+.navbar-wgq .navbar-brand:hover,
+.navbar-wgq .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-wgq .navbar-text {
+  color: #777;
+}
+.navbar-wgq .navbar-nav > li > a {
+  color: #777;
+  line-height:  50px;
+  font-size:  16px;
+}
+.navbar-wgq .navbar-nav > li > a:hover,
+.navbar-wgq .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar-wgq .navbar-nav > .active > a,
+.navbar-wgq .navbar-nav > .active > a:hover,
+.navbar-wgq .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-wgq .navbar-nav > .disabled > a,
+.navbar-wgq .navbar-nav > .disabled > a:hover,
+.navbar-wgq .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-wgq .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-wgq .navbar-toggle:hover,
+.navbar-wgq .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-wgq .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-wgq .navbar-collapse,
+.navbar-wgq .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-wgq .navbar-nav > .open > a,
+.navbar-wgq .navbar-nav > .open > a:hover,
+.navbar-wgq .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 768px) {
+  .navbar-wgq .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-wgq .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-wgq .navbar-link {
+  color: #777;
+}
+.navbar-wgq .navbar-link:hover {
+  color: #333;
+}
+.navbar-wgq .btn-link {
+  color: #777;
+}
+.navbar-wgq .btn-link:hover,
+.navbar-wgq .btn-link:focus {
+  color: #333;
+}
+.navbar-wgq .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-wgq .btn-link:hover,
+.navbar-wgq .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-wgq .btn-link:focus {
+  color: #ccc;
+}
+
+
+/* 公共样式 */
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+@font-face {
+	font-family: 'wgq';
+	src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class ^= "icon-"], 
+[class *= " icon-"] {
+	font-family: wgq;
+	font-style: normal;
+}
+
+.icon-mobilephone::before {
+  content: "\e908";
+  font-size: 13px;
+}
+
+.icon-telephone::before {
+  content: "\e909";
+  font-size: 15px;
+}
+
+.icon-logo::before {
+  content: "\e93e";
+}
+
+.icon-icon::before {
+  content: "\e920";
+}
+
+
+/* 头部区域 */
+
+
+
+#header > .topbar {
+	height: 40px;
+	border-bottom: 1px solid #c0c0c0;
+	line-height: 40px;
+	text-align: center;
+}
+
+#header > .topbar > .container > .row > div {
+	height: 40px;
+}
+
+/* 加号选择器,选择前面选中的div，兄弟节点后面所有节点 */
+/* 选择下一个元素，能选继续选下一个 */
+#header > .topbar > .container > .row > div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#header a {
+	color: #888;
+}
+
+#header a:hover {
+	text-decoration: none;
+}
+
+#header img {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -60px;
+}
+
+#header .mobile-center:hover > img {
+	display: block;
+}
+
+#header .icon-icon {
+	font-size: 50px;
+	line-height: 50px;
+	color: red;
+	vertical-align:  middle;
+}
+
+#header .icon-logo {
+	font-size: 24px;
+	line-height: 50px;
+	color: red;
+	vertical-align: middle;
+}
+
+/* section {
+	height:200px;
+	background-color: #fff
+}
+section:nth-of-type(2n+1) {
+	 选择到奇数section
+	 nth-child()找的是父元素下面的子元素，nth-of-type找的是section下的元素
+	 background-color: #ccc;
+} */
+
+/* 脚注区域 */
+
+
+
+
+
+/* 头部区域 */
+/* 自定义样式 */
+
+/**
+ * 1.样式都通过ID去限定
+ * 2.尽可能使用直接子代，即   >
+ */
+.btn-wgq { 
+  color: #EB5E5E; 
+  background-color: #7A53AD; 
+  border-color: #D18CB1; 
+} 
+ 
+.btn-wgq:hover, 
+.btn-wgq:focus, 
+.btn-wgq:active, 
+.btn-wgq.active, 
+.open .dropdown-toggle.btn-wgq { 
+  color: #EB5E5E; 
+  background-color: #7A4FB3; 
+  border-color: #D18CB1; 
+} 
+ 
+.btn-wgq:active, 
+.btn-wgq.active, 
+.open .dropdown-toggle.btn-wgq { 
+  background-image: none; 
+} 
+ 
+.btn-wgq.disabled, 
+.btn-wgq[disabled], 
+fieldset[disabled] .btn-wgq, 
+.btn-wgq.disabled:hover, 
+.btn-wgq[disabled]:hover, 
+fieldset[disabled] .btn-wgq:hover, 
+.btn-wgq.disabled:focus, 
+.btn-wgq[disabled]:focus, 
+fieldset[disabled] .btn-wgq:focus, 
+.btn-wgq.disabled:active, 
+.btn-wgq[disabled]:active, 
+fieldset[disabled] .btn-wgq:active, 
+.btn-wgq.disabled.active, 
+.btn-wgq[disabled].active, 
+fieldset[disabled] .btn-wgq.active { 
+  background-color: #7A53AD; 
+  border-color: #D18CB1; 
+} 
+ 
+.btn-wgq .badge { 
+  color: #7A53AD; 
+  background-color: #EB5E5E; 
+}
+
+
+/* 改的navbar-default */
+
+
+.navbar-wgq {
+  background-color: #fff;
+  border-color: #f5f5f5;
+}
+.navbar-wgq .navbar-brand {
+  color: #777;
+  height: 80px;
+}
+.navbar-wgq .navbar-brand:hover,
+.navbar-wgq .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-wgq .navbar-text {
+  color: #777;
+}
+.navbar-wgq .navbar-nav > li > a {
+  color: #777;
+  line-height: 48px;
+  font-size:  16px;
+}
+.navbar-wgq .navbar-nav > li > a:hover,
+.navbar-wgq .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom:  2px solid red;
+}
+.navbar-wgq .navbar-nav > .active > a,
+.navbar-wgq .navbar-nav > .active > a:hover,
+.navbar-wgq .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: transparent;
+  border-bottom: 2px solid red;
+}
+.navbar-wgq .navbar-nav > .disabled > a,
+.navbar-wgq .navbar-nav > .disabled > a:hover,
+.navbar-wgq .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-wgq .navbar-toggle {
+  border-color: #ddd;
+  margin-top: 23px;
+}
+.navbar-wgq .navbar-toggle:hover,
+.navbar-wgq .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-wgq .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-wgq .navbar-collapse,
+.navbar-wgq .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-wgq .navbar-nav > .open > a,
+.navbar-wgq .navbar-nav > .open > a:hover,
+.navbar-wgq .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-wgq .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-wgq .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-wgq .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-wgq .navbar-link {
+  color: #777;
+}
+.navbar-wgq .navbar-link:hover {
+  color: #333;
+}
+.navbar-wgq .btn-link {
+  color: #777;
+}
+.navbar-wgq .btn-link:hover,
+.navbar-wgq .btn-link:focus {
+  color: #333;
+}
+.navbar-wgq .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-wgq .btn-link:hover,
+.navbar-wgq .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-wgq .btn-link:focus {
+  color: #ccc;
+}
+
+
+/* 公共样式 */
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+@font-face {
+	font-family: 'wgq';
+	src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class ^= "icon-"], 
+[class *= " icon-"] {
+	font-family: wgq;
+	font-style: normal;
+}
+
+.icon-mobilephone::before {
+  content: "\e908";
+  font-size: 13px;
+}
+
+.icon-telephone::before {
+  content: "\e909";
+  font-size: 15px;
+}
+
+.icon-logo::before {
+  content: "\e93e";
+}
+
+.icon-icon::before {
+  content: "\e920";
+}
+
+
+/* 头部区域 */
+
+#header > .topbar {
+	height: 40px;
+	border-bottom: 1px solid #c0c0c0;
+	line-height: 40px;
+	text-align: center;
+}
+
+#header > .topbar > .container > .row > div {
+	height: 40px;
+}
+
+/* 加号选择器,选择前面选中的div，兄弟节点后面所有节点 */
+/* 选择下一个元素，能选继续选下一个 */
+#header > .topbar > .container > .row > div + div {
+	border-left: 1px solid #c0c0c0;
+}
+
+#header a {
+	color: #ccc;
+}
+
+#header a:hover {
+	color: #888;
+}
+
+#header img {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -60px;
+	z-index: 10001;
+}
+
+#header .mobile-center:hover > img {
+	display: block;
+}
+
+#header .icon-icon {
+	font-size: 50px;
+	line-height: 50px;
+	color: red;
+	vertical-align:  middle;
+}
+
+#header .icon-logo {
+	font-size: 24px;
+	line-height:  50px;
+	color: red;
+	vertical-align:  middle;
+}
+
+/**
+ * 轮播图区域
+ */
+#main_ad > .carousel-inner > .item {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+	#main_ad > .carousel-inner > .item {
+		height: 410px;
+	} 
+}
+
+
+#main_ad > .carousel-inner > .item > img {
+	width: 100%;
+}
+
+
+/* 轮播图区域 */
+
+
+
+/* 特色介绍区域 */
+#tese {
+	padding: 50px 0;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+.icon-uniE907:before {
+  content: "\e907";
+}
+
+#tese i {
+	font-size: 34px;
+}
+
+#test > .container > .row > div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* 特色区域介绍结束*/
+
+
+
+/* 立即预约开始*/
+
+ #imd {
+ 	border-bottom: 1px solid #c0c0c0;
+ 	padding: 20px 0;
+ }
+
+ #imd > .container > p {
+ 	font-size: 14px;
+ 	margin-bottom: 0;
+ }
+
+ #imd > .container > .pull-left > span,
+ #imd > .container > .pull-left > a {
+ 	color:red;
+ }
+
+ #imd > .container > .pull-left > a {
+ 	border-bottom: 1px dashed red;
+ }
+
+#imd > .container > .pull-left > a {
+	text-decoration: none;
+}
+
+.icon-uniE906:before {
+  content: "\e906";
+}
+
+.icon-uniE905:before {
+  content: "\e905";
+}
+
+/* 立即预约结束*/
+
+/* 产品推荐开始 */
+#products {
+	background-color: #f0f0f0;
+	padding: 40px 0;
+}
+
+#products > .container > .ul-wapper > .nav-tabs {
+  padding-left: 20px;
+}
+
+#products > .container > .ul-wapper > .nav-tabs > li {}
+
+#products > .container > .ul-wapper > .nav-tabs > li > a {
+  font-size: 16px;
+  color: #333;
+}
+
+#products > .container > .ul-wapper > .nav-tabs > li > a:hover {
+  border-color: transparent;
+  color: #000;
+  background-color: transparent;
+}
+
+#products > .container > .ul-wapper > .nav-tabs > li.active {}
+/* border: 0用于去除上面的多余边框 */
+#products > .container > .ul-wapper > .nav-tabs > li.active > a {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 4px solid red;
+}
+
+/* tab栏中主要内容 */
+
+#products > .container > .tab-content {
+  padding: 20px 0;
+}
+
+.panel-wgq {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+.panel-wgq.actived {
+  background-color: #e92322;
+  color: #fff;
+}
+
+.panel-wgq.actived::before {
+  content: "\e915";
+  font-family: wgq;
+  font-size: 50px;
+  position: absolute;
+  top: -11px;
+  left: 15px;
+}
+
+.panel-wgq > .panel-heading {
+  float: right;
+  width: 120px;
+  height: 150px;
+  line-height: 150px;
+  padding: 0;
+  border-left: 1px dashed #c0c0c0;
+  text-align: center;
+  position: relative;
+}
+
+.panel-wgq > .panel-heading::before,
+.panel-wgq > .panel-heading::after {
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  position: absolute;
+}
+
+.panel-wgq > .panel-heading::before {
+  top: -8px;
+  left: -8px;
+}
+
+.panel-wgq > .panel-heading::after {
+  bottom: -8px;
+  left: -8px;
+  box-shadow: 0 2px 1px #ccc inset;
+}
+
+.panel-wgq > .panel-heading > p > strong {
+  font-size: 30px;
+}
+
+.panel-wgq > .panel-heading > .tooltips {
+  position: absolute;
+  top: -26px;
+  width: 100%;
+  text-align: center;
+}
+
+.panel-wgq > .panel-heading > .tooltips > .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 0;
+  background: transparent;
+  padding: 3px;
+  margin: 2px;
+}
+
+.panel-wgq > .panel-heading > .tooltips > .badge-one {
+  color: green;
+  border-color: green;
+}
+
+.panel-wgq > .panel-heading > .tooltips > .badge-two {
+  color: red;
+  border-color: red;
+}
+
+.panel-wgq > .panel-body {
+  margin-right: 120px;
+  height: 150px;
+}
+
+
+/* 产品推荐结束 */
+
+
+/* 新闻列表开始 */
+
+
+/* 字体图标 */
+.icon-news01:before {
+  content: "\e90e";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news02:before {
+  content: "\e90f";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news03:before {
+  content: "\e910";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+.icon-news04:before {
+  content: "\e911";
+  font-size: 28px;
+  color: #EAEAEA;
+}
+
+
+/* news样式 */
+#news {
+  padding: 50px 0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+#news .new-title {
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px dashed #c0c0c0;
+  position: relative;
+}
+
+#news .new-title::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  bottom: -7px;
+  right: -14px;
+}
+
+@media (max-width: 768px) {
+  #news .nav-pills li {
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+/* 新闻列表结束 */
+
+
+/* 
+
+测试样式
+
+section {
+	height:200px;
+	background-color: #fff
+}
+section:nth-of-type(2n+1) {
+	 选择到奇数section
+	 nth-child()找的是父元素下面的子元素，nth-of-type找的是section下的元素
+	 background-color: #ccc;
+} */
+
+/* 脚注区域 */
+
+
+
+
+
+/* 头部区域 */
